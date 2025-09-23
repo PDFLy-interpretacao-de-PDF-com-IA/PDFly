@@ -97,7 +97,7 @@ ul li.item-menu a .txt-link{
 ul li.item-menu a .icon-chat{
     font-size: 20px;
     margin-left: 10px;
-    color:#D9D9D9
+    color:black;
 }
 
 ul li.item-menu a .icon > i {
@@ -186,5 +186,53 @@ ul li.item-menu a .icon > i {
   transform: translateY(-50%) scale(1.1);
 }
 
+body.theme-dark {
+  background-color: #0b1724;
+  color: #e5e7eb;
+}
 
+body.theme-dark nav.navbar {
+  background-color: #0f2132;
+  box-shadow: 3px 0 0 #0ea5e9;
+  color: #0ea5e9;
+}
+
+body.theme-dark ul li.item-menu a {
+  color: #0ea5e9;
+}
+
+body.theme-dark ul li.item-menu a .icon > i {
+  color: #0ea5e9;
+}
+
+body.theme-dark .bottom-section .txt-link {
+  color: #e5e7eb;
+}
+
+body.theme-dark .content .pdf-box {
+  background-color: #1b2b3a;
+  color: #e5e7eb;
+  border-color: #0ea5e9;
+}
+
+body.theme-dark .pdf-search input {
+  background-color: #1b2b3a;
+  color: #e5e7eb;
+}
+
+body.theme-dark .pdf-search i {
+  color: #0ea5e9;
+}
+
+body.theme-dark ul li.item-menu a .icon-chat{
+  color: #0ea5e9;
+}
+
+body.theme-dark ul li.item-menu a .txt-link{
+  color: #e5e7eb;
+}
+
+body.theme-dark .bi bi-list{
+  color: #0ea5e9;
+}
 
