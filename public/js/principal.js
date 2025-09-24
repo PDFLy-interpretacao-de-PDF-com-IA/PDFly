@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+
     const loginBtn = document.querySelector(".login-button");
 
     function updateAuthUI() {
@@ -32,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const THEME_KEY = "pdfly_theme"; // 'light' | 'dark'
 
   
+
   const saved = localStorage.getItem(THEME_KEY);
   if (saved === "dark") {
     document.body.classList.add("theme-dark");
@@ -53,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (txt) txt.textContent = isDark ? "Tema claro" : "Tema escuro";
     if (ico) ico.className = isDark ? "bi bi-toggle-off" : "bi bi-toggle-on";
   }
+
 
   // áreas de pergunta e upload de PDF
   const pdfInput = document.getElementById('pdfInput');
@@ -109,4 +112,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }
   });
   
+
 });

@@ -98,6 +98,7 @@ ul li.item-menu a .icon-chat{
   font-size: 20px;
   margin-left: 10px;
   color:#D9D9D9
+
 }
 
 ul li.item-menu a .icon > i {
@@ -221,6 +222,7 @@ ul li.item-menu a .icon > i {
   transform: translateY(-50%) scale(1.1);
 }
 
+
 .chat-container {
   width: 600px;
   margin-top: 40px;
@@ -238,6 +240,7 @@ ul li.item-menu a .icon > i {
   display: flex;
   flex-direction: column;
   gap: 10px;
+
 }
 
 .chat-message {
