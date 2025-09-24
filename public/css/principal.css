@@ -1,35 +1,35 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 body{
-    height: 100vh;
+  height: 100vh;
 }
 
 nav.navbar{
-    width:80px;
-    height:100vh;
-    background-color: #D9D9D9;
-    padding: 40px 0 40px 1%;
-    box-shadow: 3px 0 0 #133D5F;
-    color: #133D5F;
-    position:fixed; 
-    top:0;
-    left:0;
-    overflow:hidden;
-    transition: width .2s;
-    display:flex;
-    flex-direction: column;
+  width:80px;
+  height:100vh;
+  background-color: #D9D9D9;
+  padding: 40px 0 40px 1%;
+  box-shadow: 3px 0 0 #133D5F;
+  color: #133D5F;
+  position:fixed; 
+  top:0;
+  left:0;
+  overflow:hidden;
+  transition: width .2s;
+  display:flex;
+  flex-direction: column;
     
 }
 
 nav.navbar:hover{
-    width:300px;
-    opacity: 1;
-    pointer-events: auto;
+  width:300px;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 nav.navbar:hover .logo {
@@ -49,14 +49,14 @@ nav.navbar:hover .txt-link {
 }
 
 .menu{
-    width: 100%;
-    padding-left: px;
-    font-size: 24px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
+  width: 100%;
+  padding-left: px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
     
 }
 
@@ -70,8 +70,8 @@ nav.navbar:hover .txt-link {
 
 
 ul.menu-items {
-    list-style-type: none;
-    flex-grow: 1; /* Faz os itens do meio ocuparem o espaço */
+  list-style-type: none;
+  flex-grow: 1; 
 }
 
 a {
@@ -80,52 +80,89 @@ a {
 }
 
 ul li.item-menu a{
-    color: #133D5F;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 20px 4%;
-    display: flex;
-    margin-bottom: 20px;
-    align-items:center;
+  color: #133D5F;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 4%;
+  display: flex;
+  margin-bottom: 20px;
+  align-items:center;
 }
 
 ul li.item-menu a .txt-link{
-    margin-left: 30px;
-    color: black;
+  margin-left: 30px;
+  color: black;
 }
 
 ul li.item-menu a .icon-chat{
-    font-size: 20px;
-    margin-left: 10px;
-    color:black;
+  font-size: 20px;
+  margin-left: 10px;
+  color:#D9D9D9
+
 }
 
 ul li.item-menu a .icon > i {
-    font-size: 20px;
-    margin-left: 5px;
-    color: #133D5F;
+  font-size: 20px;
+  margin-left: 5px;
+  color: #133D5F;
 }
 
 .bottom-section {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    list-style: none;
-    margin-top: auto;
-    font-size: 20px;
-    padding: 20px 4%;
-    margin-bottom: -45px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  margin-top: auto;
+  font-size: 20px;
+  padding: 20px 4%;
+  margin-bottom: -45px;
 }
 
 .bottom-section .txt-link{
-    margin-left: 30px;
-    color: black;
+  margin-left: 30px;
+  color: black;
 }
 
 .theme-switch {
-  margin-top: 25px; /* Ajuste esse valor conforme o espaçamento desejado */
+  margin-top: 25px; 
 }
 
+.login-button {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background-color: #133d5f; 
+  color: #fff;              
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;      
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.3s;
+     
+  }
+
+  .login-button:hover {
+  background-color: #0f2f49; 
+  }
+
+  .main-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-header .main-logo {
+  width: 100px;  
+  height: auto;
+}
+
+.main-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #000;
+}
 
 .content {
   margin-left: 80px;                
@@ -134,25 +171,24 @@ ul li.item-menu a .icon > i {
   justify-content: center;          
   align-items: center;              
   transition: margin-left .2s;      
-  padding: 20px;
   flex-direction: column;
-  padding: 600px 20px 20px 20px;
+  padding: 100px 20px 20px 20px;
 }
 
 .pdf-box {
-    width: 600px;     
-    height: 200px;
-    background-color: #D9D9D9;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    border-radius: 15px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    border-style: dashed;
-    border-color: #133D5F;
-    border-width: 3px;
-    font-size: x-large;
-    margin-bottom: 10px;
+  width: 600px;     
+  height: 200px;
+  background-color: #D9D9D9;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-style: dashed;
+  border-color: #133D5F;
+  border-width: 3px;
+  font-size: x-large;
+    
 }
 
 .pdf-search {
@@ -186,6 +222,38 @@ ul li.item-menu a .icon > i {
   transform: translateY(-50%) scale(1.1);
 }
 
+
+.chat-container {
+  width: 600px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.chat-messages {
+  background-color: transparent; 
+  border-radius: 10px;
+  padding: 15px;
+  max-height: 300px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.chat-message {
+  align-self: flex-end; 
+  background-color: #133D5F;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 15px;
+  max-width: 80%;
+  word-wrap: break-word;
+  font-size: 15px;
+}
+
 body.theme-dark {
   background-color: #0b1724;
   color: #e5e7eb;
@@ -197,6 +265,10 @@ body.theme-dark nav.navbar {
   color: #0ea5e9;
 }
 
+body.theme-dark .main-header h1 {
+  color: #ffffff; 
+}
+
 body.theme-dark ul li.item-menu a {
   color: #0ea5e9;
 }
@@ -205,7 +277,11 @@ body.theme-dark ul li.item-menu a .icon > i {
   color: #0ea5e9;
 }
 
-body.theme-dark .bottom-section .txt-link {
+body.theme-dark  .txt-link {
+  color: #e5e7eb;
+}
+
+body.theme-dark .bottom-section .icon-chat {
   color: #e5e7eb;
 }
 
@@ -225,7 +301,7 @@ body.theme-dark .pdf-search i {
 }
 
 body.theme-dark ul li.item-menu a .icon-chat{
-  color: #0ea5e9;
+  color: #0f2132;
 }
 
 body.theme-dark ul li.item-menu a .txt-link{
@@ -236,3 +312,7 @@ body.theme-dark .bi bi-list{
   color: #0ea5e9;
 }
 
+body.theme-dark .chat-message {
+  background-color: #0ea5e9;
+  color: #fff;
+}

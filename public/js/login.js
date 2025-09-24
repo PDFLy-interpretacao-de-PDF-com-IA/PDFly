@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const emailInput = document.getElementById("email");
   const senhaInput = document.getElementById("senha");
   const btnEntrar  = document.querySelector(".btn-entrar");
+  const signupLink  = document.getElementById("signupLink");
 
   if (!emailInput || !senhaInput || !btnEntrar) return;
 
@@ -51,4 +52,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // redireciona para a tela principal
     window.location.href = "principal.html";
   });
+
+  if (signupLink) {
+    signupLink.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.location.href = "cadastro.html";
+    });
+  }
 });
