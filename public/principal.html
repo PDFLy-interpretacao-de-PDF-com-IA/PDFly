@@ -17,7 +17,7 @@
 
         <ul class="menu-items">
             <li class="item-menu">
-                <a href="#">
+                <a href="#" id="newChatBtn">
                     <span class="icon"><i class="bi bi-plus-circle"></i></span>
                     <span class="txt-link">Novo chat</span>
                 </a>
@@ -47,20 +47,33 @@
                 </li>
         </div>
     </nav>
+
+    <header class="main-header">
+        <img src="imgns/LogoPDFlySF.png" alt="Logo PDFly" class="main-logo">
+        <h1>PDFly</h1>
+    </header>
     
     <div class="content">
-        <div class= "pdf-box">
+        <label class="pdf-box" for="pdfInput">
             Insira o PDF
+        </label>
+
+        <input type="file" id="pdfInput" accept=".pdf" hidden>
+
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages">
         </div>
 
         <div class="pdf-search">
-            <input type="text" placeholder="Pergunta">
-            <i class="bi bi-arrow-right-circle-fill"></i>
-
+            <input type="text" id="chatInput" placeholder="Pergunta">
+            <i class="bi bi-arrow-right-circle-fill" id="sendBtn"></i>
         </div>
     </div>
-    <div class="login-buton">
-        
-    </div>
+
+    <button class="login-button">Entrar</button>
+    
+    <script src="js/app.js"></script>
+    <script src="js/principal.js"></script>
+
 </body>
 </html>
