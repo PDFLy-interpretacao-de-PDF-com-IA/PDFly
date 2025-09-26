@@ -12,7 +12,7 @@
         <div class="menu">
             <i class="bi bi-list"></i>
             <img class="logo" src="imgns/LogoPDFlySF.png" alt="Logo PDFly">
-             <span class="txt-link">PDFly</span>
+            <span class="txt-link">PDFly</span>
         </div>
 
         <ul class="menu-items">
@@ -32,19 +32,19 @@
         </ul>
 
         <div class="bottom-section">
-                <li class="item-menu">
-                    <a href="#">
-                        <span class="icon-user"><i class="bi bi-person-circle"></i></span>
-                        <span class="txt-link">Perfil</span>
-                    </a>
-                </li>
-        
-                <li class="item-menu theme-switch">
-                    <a href="#">
-                        <span class="icon-theme"><i class="bi bi-toggle-on"></i></span>
-                        <span class="txt-link">Tema escuro</span>
-                    </a>
-                </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon-user"><i class="bi bi-person-circle"></i></span>
+                    <span class="txt-link">Perfil</span>
+                </a>
+            </li>
+
+            <li class="item-menu theme-switch">
+                <a href="#">
+                    <span class="icon-theme"><i class="bi bi-toggle-on"></i></span>
+                    <span class="txt-link">Tema escuro</span>
+                </a>
+            </li>
         </div>
     </nav>
 
@@ -52,29 +52,42 @@
         <img src="imgns/LogoPDFlySF.png" alt="Logo PDFly" class="main-logo">
         <h1>PDFly</h1>
     </header>
-    
-    <div class="content">
-        <label class="pdf-box" for="pdfInput">
-            Insira o PDF
-        </label>
 
-        <input type="file" id="pdfInput" accept=".pdf" hidden>
+    <!-- Formulário para enviar o PDF e a pergunta -->
+    <form id="pdfForm" action="/uploads" method="post" enctype="multipart/form-data">
+        <div class="content">
+            <!-- Label para o PDF -->
+            <label class="pdf-box" for="pdfInput">
+                Insira o PDF
+            </label>
 
-        <div class="chat-container">
-            <div class="chat-messages" id="chatMessages">
+            <!-- Input para o PDF -->
+            <input type="file" id="pdfInput" name="pdf" accept=".pdf" hidden>
+
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                </div>
+
+                <div class="pdf-search">
+                    <!-- Input de texto para a pergunta -->
+                    <input type="text" id="chatInput" name="pergunta" placeholder="Digite sua pergunta" required>
+
+                    <!-- Botão de envio -->
+                    <i class="bi bi-arrow-right-circle-fill" id="sendBtn"></i>
+                    
+                </div>
+            </div>
         </div>
+    </form>
 
-        <div class="pdf-search">
-            <input type="text" id="chatInput" placeholder="Pergunta">
-            <i class="bi bi-arrow-right-circle-fill" id="sendBtn"></i>
-        </div>
-    </div>
+    <footer id="main-footer">
+        O PDFly pode e cometerá erros em suas respostas. Caso haja imprecisões nas respostas, repita a pergunta.
+    </footer>
 
     <button class="login-button">Entrar</button>
-    
+
     <script src="js/app.js"></script>
     <script src="js/principal.js"></script>
-
 
 </body>
 </html>

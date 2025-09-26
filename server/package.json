@@ -1,0 +1,24 @@
+{
+  "name": "pdf-ia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./"
+  },
+
+  
+  "keywords": [],
+  "author": "Fabricio Krull, Vitor de Toledo",
+  "license": "ISC",
+  "packageManager": "pnpm@10.15.1",
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "groq-sdk": "^0.32.0",
+    "multer": "^2.0.2",
+    "pdf-parse": "1.1.0"
+  }
+}
