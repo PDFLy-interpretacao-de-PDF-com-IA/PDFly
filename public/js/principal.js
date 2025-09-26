@@ -1,5 +1,45 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+async function askPDFly() {
+        const fileInput = document.getElementById('pdfInput');
+            const questionInput = document.getElementById('chatInput');
+
+            if (!fileInput.files.length || !questionInput.value.trim()) {
+                console.error('Você precisa escolher um PDF e escrever uma pergunta.');
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('pdf', fileInput.files[0]);
+            formData.append('pergunta', questionInput.value);
+
+            try {
+                const response = await fetch('http://localhost:3000/uploads', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                // Exibir resposta no chat
+                const chatBox = document.getElementById('chatMessages');
+                const msg = document.createElement('p');
+                msg.innerHTML = data.resposta || 'Sem resposta';
+                chatBox.appendChild(msg);
+
+            } catch (error) {
+                console.error('Erro no envio:', error);
+            }
+        }
+
+    document.getElementById('sendBtn').addEventListener('click', async () => await askPDFly());
+    document.getElementById('chatInput').addEventListener('keypress', async (event) => {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            await askPDFly();
+        }
+    });
+
 
     const loginBtn = document.querySelector(".login-button");
 
