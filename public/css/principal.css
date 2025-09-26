@@ -188,7 +188,51 @@ ul li.item-menu a .icon > i {
   border-color: #133D5F;
   border-width: 3px;
   font-size: x-large;
+   position: relative;
     
+}
+
+.clear-btn.visible {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px; 
+  width: 34px;
+  height: 34px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1rem;
+  margin-left: 10px;
+  transform: translateY(calc(-100% - 6px));
+  vertical-align: top; 
+}
+
+.clear-btn.visible .bi {
+  font-size: 1.2rem;
+  color: inherit; 
+}
+
+.clear-btn.visible:hover {
+  background: rgba(0,0,0,0.05);
+  border-radius: 6px;
+}
+
+.theme-dark .clear-btn.visible .bi,
+.theme-dark .clear-btn .bi {
+  color: #ffffff;
+}
+
+.theme-dark .clear-btn.visible:hover,
+.theme-dark .clear-btn:hover {
+  background: #1a1a1a; 
+  border-radius: 6px;
+}
+
+.theme-dark .clear-btn:focus {
+  outline: 2px solid #333333; 
+  outline-offset: 2px;
 }
 
 .pdf-search {
@@ -221,7 +265,6 @@ ul li.item-menu a .icon > i {
 .pdf-search i:hover {
   transform: translateY(-50%) scale(1.1);
 }
-
 
 .chat-container {
   width: 600px;
@@ -315,44 +358,4 @@ body.theme-dark .bi bi-list{
 body.theme-dark .chat-message {
   background-color: #0ea5e9;
   color: #fff;
-}
-
-body.theme-dark #main-footer {
-  background-color: #0f2132; /* ou qualquer tom escuro desejado */
-  color: #e5e7eb;
-}
-
-/* altere caso necessário */
-
-#main-footer {
-  width: 100%;
-  height: 60px;
-  background-color: #D9D9D9;
-  color: #133D5F;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  bottom: 0;
-  left: 0;
-  font-size: 18px;
-}
-
-/* Alvo do elemento com scroll, ex: body, div, etc */
-::-webkit-scrollbar {
-  width: 12px; /* largura do scrollbar vertical */
-  height: 12px; /* altura do scrollbar horizontal */
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1; /* fundo da área do scroll */
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888; /* cor da "alça" do scroll */
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555; /* cor ao passar o mouse */
 }
